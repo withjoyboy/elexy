@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.heading {
+  background-color: rgb(12, 11, 11);
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0%;
+  z-index: 1;
+}
+.subNav {
+  width: 92%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar a {
+  font-family: "Inter", serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: aliceblue;
+  text-decoration: none;
+}
+.navbar a:hover {
+  color: rgb(199, 195, 195);
+  cursor: pointer;
+}
+.logo1 {
+  width: 20%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+.logo1 img {
+  width: 80px;
+  height: 30px;
+}
+.logo1 img:hover {
+  cursor: pointer;
+}
+.search {
+  width: 20%;
+  height: 50%;
+  color: aliceblue;
+  font-size: 21px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 13px;
+}
+.search i:hover {
+  color: rgb(210, 209, 209);
+  cursor: pointer;
+}

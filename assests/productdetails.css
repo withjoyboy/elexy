@@ -1,0 +1,599 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.heading {
+  background-color: rgb(12, 11, 11);
+  width: 100%;
+  height: 12.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0%;
+  z-index: 100;
+}
+.subNav {
+  width: 92%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar a {
+  font-family: "Inter", serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: aliceblue;
+  text-decoration: none;
+}
+.navbar a:hover {
+  color: rgb(199, 195, 195);
+  cursor: pointer;
+}
+.logo1 {
+  width: 20%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+.logo1 img {
+  width: 80px;
+  height: 30px;
+}
+.logo1 img:hover {
+  cursor: pointer;
+}
+.search {
+  width: 20%;
+  height: 50%;
+  color: aliceblue;
+  font-size: 21px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 13px;
+}
+.search i:hover {
+  color: rgb(210, 209, 209);
+  cursor: pointer;
+}
+.product-home1 {
+  /* background-color: aqua; */
+  width: 92%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  overflow: hidden;
+}
+.product-img{
+  width: 50%;
+  height: 100%;
+  overflow-y: scroll;
+}
+.product-img1{
+  width: 50%;
+  height: 100%;
+  margin-top: 30px;
+  display: grid;
+  grid-template-rows: repeat(4,1fr);
+  row-gap: 20px;
+}
+.phone-img1{
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+.phone-img1 i{
+  font-size: 30px;
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  overflow: hidden;
+  opacity: 0;
+  cursor: pointer;
+}
+.phone-img1:hover i{
+  opacity: 1;
+}
+.phone-img1 img{
+  width: 700px;
+  height: 700px;
+  overflow: hidden;
+}
+.product-detail{
+  /* background-color: rgb(131, 56, 237); */
+  width: 50%;
+  height: 100%; 
+  display: flex;
+  align-items: center;
+}
+.prod-detail{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 15px;
+}
+.smart {
+  font-family: "Open Sans", serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 62.4px;
+}
+.price {
+  color: #373737;
+  font-family: "Inter", serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.stars {
+  display: flex;
+  gap: 10px;
+}
+.stars i {
+  font-family: Times;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.stars p {
+  color: #5c5b5b;
+  font-family: "Inter", serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.mobile {
+  color: black;
+  font-family: "Open Sans", serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.mobile span {
+  color: #5c5b5b;
+  font-family: "Open Sans", serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.stock-1 {
+  width: 100%;
+  height: 5%;
+}
+.stock {
+  color: #5c5b5b;
+  font-family: "Inter", serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.line1 {
+  background-color: black;
+  width: 61%;
+  height: 5px;
+}
+.color {
+  color: black;
+  font-family: "Open Sans", serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.color span {
+  color: #5c5b5b;
+  font-family: "Open Sans", serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.phone-img {
+  /* background-color: blue; */
+  width: 30%;
+  height: 40px;
+  display: flex;
+  gap: 10px;
+}
+.phone-1 {
+  width: 30px;
+  height: 30px;
+  padding: 3px;
+  border-radius: 50%;
+  border: rgb(9, 9, 9) 2px solid;
+  cursor: pointer;
+}
+.phone-2 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 3px;
+  border: rgb(176, 174, 174) 2px solid;
+  cursor: pointer;
+}
+.quanty {
+  width: 100%;
+  height: 12%;
+}
+.quantity {
+  color: #535252;
+  font-family: "Inter", serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.add-cart {
+  /* background-color: aqua; */
+  width: 55%;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.number {
+  color: black;
+  width: 20%;
+  height: 80%;
+  font-size: 15px;
+  letter-spacing: 20px;
+  text-align: center;
+  display: flex;
+  align-items: end;
+}
+.number:hover {
+  cursor: pointer;
+}
+.add-cart button {
+  font-family: "Inter", serif;
+  color: #6d6d6e;
+  width: 50%;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 50px;
+}
+.add-cart button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: aliceblue;
+}
+.buynow {
+  background-color: black;
+  color: rgb(254, 253, 251);
+  width: 100%;
+  height: 7%;
+  font-family: "Open Sans", serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  border-radius: 50px;
+}
+.buynow:hover {
+  cursor: pointer;
+  transform: scale(2px);
+}
+.checkout {
+  color: #727171;
+  font-family: "Inter", serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.visaa {
+  /* background-color: aqua; */
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+}
+.product-home2 {
+  /* background-color: aqua; */
+  width: 92%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  overflow: hidden;
+}
+.product-img{
+  width: 50%;
+  height: 100%;
+  overflow-y: scroll;
+}
+.product-img1{
+  width: 50%;
+  height: 100%;
+  margin-top: 30px;
+  display: grid;
+  /* grid-template-rows: repeat(4,1fr); */
+  row-gap: 20px;
+}
+.phone-img1{
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+.phone-img1 i{
+  font-size: 30px;
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  overflow: hidden;
+  opacity: 0;
+  cursor: pointer;
+}
+.phone-img1:hover i{
+  opacity: 1;
+}
+.phone-img1 img{
+  width: 700px;
+  height: 700px;
+  overflow: hidden;
+}
+.prod-detail1{
+  width: 100%;
+  height: 100%;
+  
+}
+.pickup-1{
+  /* background-color: aqua; */
+  
+  display: flex;
+}
+.pickup-img img {
+  /* background-color: #373737; */
+  width: 19px;
+  height: 18px;
+}
+.addres-1{
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.pickup{
+  color: #727171;
+  font-family: "Inter", serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.pickup span{
+  color: rgb(51, 50, 50);
+  font-family: "Inter", serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.hrs-24{
+  color: #727171;
+  font-family: "Inter", serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 1px; 
+}
+.view-store{
+  color: #757575;
+  font-family: "Inter", serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.view-store:hover{
+  color: #414040;
+}
+.descrip{
+  /* background-color: #373737; */
+  /* color: aliceblue; */
+  width: 50%;
+  height: 50px;
+  display: flex;
+  align-items: end;
+  gap: 10px;
+}
+.descrip i{
+  /* width: 30px;
+  height: 30px; */
+  font-size: 18px;
+  color: #5b5a5a;
+}
+.descrip a{
+  color: #090909;
+  font-family: "Open Sans", serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 27px;
+  text-decoration: none;
+}
+.share-more{
+  /* background-color: aqua; */
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.fb-1{
+  background-color: white;
+  padding: 5px 10px;  
+  border: #6a6a6a 1px solid;
+  cursor: pointer;
+}
+.fb-1 i{
+  font-size: 18px;
+  color: #414040;
+}
+.fb-1 i:hover {
+  text-decoration: dashed;
+  color: #6a6969;
+}
+.fb-1 a{
+  color: #6a6969;
+  font-family: "Inter", serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 27px;
+  text-decoration: none;
+}
+ .fb-1 a:hover {
+  text-decoration: dashed;
+  color: #6a6969;
+}
+.guide{
+  color: #1f1f1f;
+  font-family: "Inter", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 36px;
+}
+.customer-rating{
+  /* background-color: aqua; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.customer-rating h2{
+  font-family: "Open Sans", serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 31px;
+}
+.rating-star{
+  /* background-color: blueviolet; */
+}
+.rating-star i{
+  font-size: 18px;
+  color: #feb002;
+}
+.rating-star p{
+  font-family: "Inter", serif;
+  font-size: 15px;
+  font-weight: 400px;
+  color: #383838;
+}
+.review-1{
+  /* height: 30px; */
+  
+}
+.review-1 button{
+  width: 45%;
+  height: 40px;
+  font-family: "Open Sans", serif;
+  font-size: 16px;
+  font-weight: 700px;
+  color: #fdfafa;
+  background-color: #feb002;
+  cursor: pointer;
+  border: none;
+}
+.review-1 button:hover{
+  background-color: #ebd493;
+}
+.starrate-grid{
+  /* background-color: #090909; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.star-grid{
+  width: 45%;
+  display: grid;
+  grid-template-rows: repeat(5,1fr);
+  position: relative;
+}
+.grid-stars{
+  /* background-color: blueviolet; */
+  width: 100px;
+  font-size: 15px;
+  color: #feb002;
+  display: flex;
+  position: absolute;
+  top: 0%;
+}
+.rating-space{
+  background-color: #feb002;
+  width: 130px;
+  height: 15px;
+  display: flex;
+  position: absolute;
+  top: 0%;
+  left: 100px;
+}
+.rating-count{
+  width: 30px;
+  font-family: "Inter", serif;
+  font-size: 13px;
+  font-weight: 400px;
+  color: #383838;
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+.recent{
+  font-family: "Inter", serif;
+  font-size: 13px;
+  font-weight: 400px;
+  color: #feb002;
+  margin-top: 20px;
+}
+.jhone-grid{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  margin-top: 20px;
+}
+.jhone-1{
+  width: 50%;
+  position: relative;
+}
+.jhone-1 i{
+  color: #feb002;
+  font-size: 22px;
+  /* margin-top: 10px; */
+}
+.jhone-date{
+  width: 50%;
+  color: #a3a3a3;
+  font-size: 15px;
+  display: flex;
+  justify-content: end;
+}
+.user-star{
+  color: #feb002;
+  font-size: 15px;
+  display: flex;
+  position: absolute;
+  top: 0%;
+  left: 30px;
+}
+.jhone-doggy{
+  font-family: "Inter", serif;
+  font-size: 16px;
+  font-weight: 700px;
+  line-height: 27px;
+  color:  #6d6d6b;
+  position: absolute;
+  top: 30px;
+  left: 45px;
+}
