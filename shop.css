@@ -15,13 +15,12 @@ body {
 .heading {
   background-color: rgb(12, 11, 11);
   width: 100%;
-  height: 100px;
+  height: 13%;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: sticky;
-  top: 0%;
-  z-index: 1;
+  position: fixed;
+  z-index: 100;
 }
 .subNav {
   width: 92%;
@@ -75,4 +74,99 @@ body {
 .search i:hover {
   color: rgb(210, 209, 209);
   cursor: pointer;
+}
+.products{
+  width: 92%;
+  height: 30%;
+  margin: 0 auto;
+  display: flex;
+  align-items: end;
+  /* background-color: aquamarine; */
+  font-family: "Open Sans", serif;
+}
+.products h3{
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 62.8px;
+}
+.short-by{
+  width: 92%;
+  height: 25%;
+  margin: 0 auto;
+  display: flex;
+  align-items: end;
+}
+.prod-row{
+  /* background-color: blueviolet; */
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: end;
+  padding-bottom: 10px;
+  gap: 10px;
+}
+.prod-row p{
+  font-family: "Open Sans", serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: rgb(84, 84, 85);
+}
+.prod-row p:hover{
+  cursor: pointer;
+  color: rgb(182, 126, 13);
+}
+.prod-sortby{
+  /* background-color: aquamarine; */
+  width: 70%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  gap: 15px;
+}
+.prod-sortby label{
+  color: rgb(67, 66, 65);
+  font-family: "Open Sans", serif;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.prod-sortby select{
+  width: 180px;
+  height: 40px;
+  font-family: "Open Sans", serif;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 6px;
+  border: 2px solid rgb(50, 50, 50);
+  /* margin-bottom: px; */
+  padding-left: 10px;
+  color: rgb(72, 70, 70);
+  /* text-align: center; */
+}
+.prod-sortby p{
+  color: rgb(6, 6, 6);
+  font-family: "Open Sans", serif;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.availability-prod{
+  width: 92%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+
+}
+.availability{
+  width: 20%;
+  height: 100%;
+  background-color: aqua;
+}
+.prod-availability{
+  width: 80%;
+  height: 100%;
+  background-color: blue;
 }
