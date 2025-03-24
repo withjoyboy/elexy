@@ -19,9 +19,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: sticky;
-  top: 0%;
-  z-index: 1;
+  position: fixed;
+  z-index: 100;
 }
 .subNav {
   width: 92%;
@@ -116,4 +115,437 @@ body {
   width: 700px;
   height: 700px;
   overflow: hidden;
+}
+.prod-contact{
+  width: 92%;
+  height: 20%;
+  /* background-color: aqua; */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  gap: 5px;
+
+}
+.prod-contact h1{
+  font-family: "Open Sans", serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 62.8px;
+}
+.prod-home{
+   width: 40%;
+   height: 25%;
+   display: flex;
+   align-items: end;
+   justify-content: center;
+   gap: 10px;
+}
+.prod-home p{
+  color: rgb(33, 34, 44);
+  font-family: "Inter", serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.prod-home a{
+  color: rgb(33, 34, 44);
+  font-family: "Inter", serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.contact-page{
+  color: rgb(33, 34, 44);
+  font-family: "Inter", serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 27px;
+  text-decoration: none;
+}
+.prod-collaborate{
+  width: 92%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  gap: 100px;
+  position: relative;
+/* background-color: #1f1e1e; */
+}
+.contact-detail{
+  width: 50%;
+  height: 100%;
+   /* background-color: #3eb856; */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 20px;
+   
+}
+.contact-detail h2{
+  font-family: "Open Sans", serif;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 62.8px;
+}
+.best-prod{
+  width: 95%;
+  color: rgba(56, 56, 58, 0.801);
+  font-family: "Inter", serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.contact-add{
+  color: rgba(63, 62, 62, 0.938);
+  font-family: "Open Sans", serif;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 27px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  margin-top: 10px;
+}
+.contact-add span{
+  color: rgb(3, 3, 3);
+  font-family: "Open Sans", serif;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 27px;
+}
+.your-info{
+  width: 50%;
+  height: 90%;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 15px;
+
+}
+.your-info button{
+  width: 130px;
+  height: 45px;
+  font-family: "Inter", serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 27px;
+  background-color: rgb(24, 23, 23);
+  color: white;
+  border-radius: 50px;
+  margin-left: 10px;
+}
+.your-info button:hover{
+  cursor: pointer;
+  transform:translateY(-1px) ;
+  transition: all .2s;
+}
+.say-hello{
+  color: rgb(3, 3, 3);
+  font-family: "Open Sans", serif;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 27px;
+  margin-left: 10px;
+}
+.enter-contact{
+  width: 90%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.enter-info{
+  /* background-color: aqua; */
+  width: 100%;
+  height: 10%;
+  border: 1px solid white;
+
+}
+.enter-info::placeholder{
+  color: rgb(46, 45, 45);
+  font-family: "Open Sans", serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 27px;
+  padding: 5px;
+}
+.enter-info:hover{
+  border-bottom: 2px solid rgb(43, 42, 42)  ;
+}
+.enter-info1{
+  width: 100%;
+  height: 20%;
+  border: 1px solid white;
+}
+.enter-info1::placeholder{
+  color: rgb(38, 38, 38);
+  font-family: "Open Sans", serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 27px;
+  padding: 5px;
+}
+.enter-info1:hover{
+  border-bottom: 2px solid rgb(49, 48, 48)  ;
+}
+.contact-loc{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.location{
+  width: 92%;
+  height: 70%;
+}
+.insta-shop {
+  /* background-color: aqua; */
+  width: 92%;
+  height: 13%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.insta-shop h2 {
+  font-family: "Open Sans", serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 62.4px;
+}
+.instagram {
+  width: 100%;
+  height: 45%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  align-items: end;
+}
+.insta-theme {
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+  position: relative;
+}
+.insta-theme img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  transition: 0.4s linear;
+  transform: scale(1);
+}
+.insta-theme:hover img {
+  transition: 0.5s linear;
+  transform: scale(1.1, 1.1);
+  overflow: hidden;
+}
+.insta-icon {
+  position: absolute;
+  /* background-color: aqua; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+.insta-theme:hover .insta-icon {
+  cursor: pointer;
+  opacity: 1;
+}
+.insta-icon1 {
+  background-color: #b4976c;
+  color: azure;
+  font-family: "Inter", serif;
+  font-size: 50px;
+  font-weight: 400px;
+  padding: 20px;
+  border-radius: 50%;
+}
+.contact {
+  width: 100%;
+  height: 100vh;
+  background: rgb(51, 71, 85);
+  background: linear-gradient(101deg, rgb(27, 37, 45) 0%, rgb(29, 15, 10) 100%);
+}
+.subscribe {
+  /* background-color: aqua; */
+  width: 92%;
+  height: 40%;
+  margin: 0 auto;
+  display: flex;
+  border: #121212;
+}
+.newsletter {
+  width: 50%;
+  height: 100%;
+  color: #ffffff;
+  font-family: "Open Sans", serif;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 62.4px;
+  text-decoration: solid rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+}
+.submit-email {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  position: relative;
+}
+.submit-email input {
+  background-color: transparent;
+  width: 75%;
+  height: 13%;
+  margin-right: 5px;
+  padding: 10px;
+  font-family: "Inter", serif;
+  color: #6d6d6e;
+  font-size: 15px;
+  font-weight: 400;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+}
+.submit-email button {
+  font-family: "Inter", serif;
+  color: #6d6d6e;
+  width: 20%;
+  height: 17%;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 10px 10px;
+  padding: 10px;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 105px;
+}
+.submit-email button:hover {
+  cursor: pointer;
+}
+.information {
+  /* background-color: rgb(59, 219, 80); */
+  width: 92%;
+  height: 60%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: end;
+  border-top: rgb(78, 76, 76) 1px solid;
+}
+.quick-link {
+  /* background-color: rgb(4, 4, 4); */
+  color: #ffffff;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.quick-link h2 {
+  font-family: "Open Sans", serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20.8px;
+}
+.quick-link ul li {
+  list-style: none;
+  padding: 8px;
+  padding-left: 0px;
+}
+.quick-link a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Open Sans", serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20.8px;
+  display: flex;
+  gap: 20px;
+}
+.contact-info {
+  /* background-color: rgb(201, 5, 5); */
+  width: 100%;
+  height: 90%;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.info-1 {
+  color: #ffffff;
+  font-family: "Open Sans", serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20.8px;
+}
+.address1 {
+  color: #d0d0d4;
+  font-family: "Inter", serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 27px;
+  padding-top: 10px;
+}
+.contact-no {
+  width: 50%;
+  color: #d0d0d4;
+  font-family: "Inter", serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.social-link {
+  /* background-color: aqua; */
+  width: 60%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.social-link i {
+  /* background-color: #b4976c; */
+  font-size: 15px;
+  padding: 6px;
+  border-radius: 50%;
+  border-color: #f3f1f3;
+  border-style: groove;
+}
+.social-link i:hover {
+  cursor: pointer;
+}
+.elexy-theme1 {
+  width: 92%;
+  height: 10%;
+  margin: 0 auto;
+  display: flex;
+}
+.elexy-theme2 {
+  /* background-color: #b4976c; */
+  width: 50%;
+  height: 100%;
+  color: #5a5858;
+  font-family: "Inter", serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+}
+.visaa {
+  /* background-color: aqua; */
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
