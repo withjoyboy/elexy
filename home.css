@@ -1517,7 +1517,7 @@ body {
 }
 .social-link i {
   /* background-color: #b4976c; */
-  font-size: 15px;
+  font-size: 16px;
   padding: 6px;
   border-radius: 50%;
   border-color: #f3f1f3;
@@ -1525,6 +1525,8 @@ body {
 }
 .social-link i:hover {
   cursor: pointer;
+  background-color: #f5f1f1;
+  color: #050505;
 }
 .elexy-theme1 {
   width: 92%;
