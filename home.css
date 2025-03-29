@@ -49,6 +49,9 @@ body {
   color: rgb(199, 195, 195);
   cursor: pointer;
 }
+.homemenu-icon{
+  display: none;
+}
 .logo1 {
   width: 20%;
   height: 50%;
@@ -78,6 +81,9 @@ body {
 .search i:hover {
   color: rgb(210, 209, 209);
   cursor: pointer;
+}
+.menu-icon{
+  display: none;
 }
 .home {
   /* background-color: aqua; */
@@ -368,12 +374,12 @@ body {
 }
 .category-section {
   width: 92%;
-  height: auto;
+  height: 30%;
   margin: 0 auto;
   /* background-color: #f15353; */
 }
 .category-headers {
-  height: 200px;
+  height: 100%;
   /* background-color: yellow; */
   display: flex;
   flex-direction: column;
@@ -1554,6 +1560,10 @@ body {
   align-items: center;
   justify-content: end;
 }
+.homeMobile{
+  display: none;
+}
+
 
 @media (max-width: 1200px) {
   .backgroundimg {
@@ -1561,9 +1571,15 @@ body {
     flex-direction: column;
     height: 46%;
     justify-content: space-between;
-    background-size: 1200px;
+    background-size: 888px;
     /* background-image: url(./assests/Mask_group.png); */
     background-position: top;
+  }
+  .home{
+    display: block;
+  }
+  .homeMobile{
+    display: none;
   }
   .heading {
     height: 20%;
@@ -1571,36 +1587,51 @@ body {
   .navbar {
     width: 40%;
     font-size: 17px;
+    display: none;
   }
   .search {
-    font-size: 18px;
+    font-size: 20px;
     gap: 10px;
   }
-  .home {
-    width: 80%;
-    height: 70%;
+  .shuffle-line{
+    display: none;
   }
+  .heart-line{
+    display: none;
+  }
+  .user-line{
+    display: none;
+  }
+  .menu-icon{
+    display: block;
+  }
+  .home {
+    width: 100%;
+    height: 70%;
+}
   .subhome {
-    width: 71%;
+    width: 85%;
     height: 5%;
     display: flex;
     align-items: start;
     justify-content: center;
   }
   .subhome1 {
-    width: 85%;
-  }
+    width: 100%;
+    margin-left: 40px;
+}
   .one {
-    font-size: 16px;
-    letter-spacing: 2px;
-  }
+    font-size: 18px;
+    letter-spacing: 5px;
+}
   .two {
-    width: 90%;
+    width: 60%;
     font-size: 30px;
-  }
-  .three {
-    font-size: 10px;
-  }
+}
+.three {
+  width: 100%;
+  font-size: 18px;
+}
   .four {
     width: 50%;
     margin-top: 5px;
@@ -1609,7 +1640,7 @@ body {
     padding: 8px 20px;
     border-radius: 40px;
     border: 2px solid #ffffff;
-    height: 35px;
+    height: 40px;
     width: 100px;
   }
   .preorder a {
@@ -1617,7 +1648,7 @@ body {
   }
   .viewmore button {
     width: 100px;
-    height: 35px;
+    height: 40px;
   }
   .viewmore button {
     font-size: 10px;
@@ -1678,6 +1709,21 @@ body {
   .morden a {
     font-size: 10px;
     font-weight: 300;
+  }
+  .phone12{
+    width: 100%;
+    height: 100%;
+  }
+  .category-products{
+    padding-left: 10px;
+  }
+  .image-div{
+    width: 100%;
+  }
+  .cat-image{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
   }
   .category-headers h2 {
     font-family: "Open Sans", serif;
@@ -1895,12 +1941,49 @@ body {
   .mega-offer {
     height: 30%;
   }
+  .sale-time {
+    height: 20%;
+}
+.time{
+  height: 50%;
+  font-size: 40px;
+}
+.time-span{
+  font-size: 10px;
+}
+.hrs{
+  font-size: 35px;
+  font-weight: 400;
+}
+.shopnow {
+  height: 40%;
+  display: flex;
+  align-items: center;
+}
+.shopnow1 button {
+  font-size: 15px;
+  font-weight: 400;
+  width: 130px;
+  height: 50px;
+  padding: 5px 15px;
+  margin-bottom: 10px;
+}
+.mega-offer {
+  height: 25%;
+}
   .happiness {
-    height: 15%;
+    height: 20%;
   }
   .client {
+    width: 80%;
     height: 80%;
-    gap: 10px;
+    gap: 15px;
+  }
+  .next1{
+    width: 20%;
+  }
+  .next1 a{
+    gap: 20px;
   }
   .client h2 {
     font-family: "Open Sans", serif;
@@ -1910,27 +1993,51 @@ body {
   }
   .client p {
     font-family: "Inter", serif;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 25.4px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 33.4px;
     color: #363636;
-    width: 60%;
-  }
+    width: 100%;
+}
   .next1 i {
     font-size: 25px;
   }
   .smart-assis {
-    height: 60%;
+    height: 50%;
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    /* align-items: center; */
+    /* flex-direction: co; */
+    gap: 15px;
+    margin-top: 20px;
   }
+  .stars {
+    width: 100%;
+  }
+  .assis-1 {
+    width: 100%;
+    height: 10%;
+    font-family: "Open Sans", serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 23.4px;
+    margin-top: 10px;
+}
+.assistant p{
+  font-size: 15px;
+}
+.client-info {
+  width: 100%;
+  height: 20%;
+  /* gap: 8px; */
+}
   .assistant {
     height: 40%;
   }
 
   .insta-shop {
     height: 10%;
+    display: flex;
+    align-items: start;
   }
   .insta-shop h2 {
     font-family: "Open Sans", serif;
@@ -1956,53 +2063,55 @@ body {
     font-size: 30px;
     padding: 15px;
   }
-  .contact {
-    width: 100%;
-    height: auto;
-  }
   .quick-link {
     height: 100%;
   }
   .contact {
-    height: 40%;
-  }
-  .contact-info {
-    height: 100%;
-  }
+    height: 70%;
+}
   .subscribe {
-    height: 25%;
+    width: 95%;
+    height: 35%;
     display: flex;
     flex-direction: column;
+    /* gap: 20px; */
+    align-items: center;
+    justify-content: center;
+    /* justify-content: space-around; */
   }
   .newsletter {
     width: 100%;
-    height: 100px;
+    height: 50%;
     font-size: 20px;
     font-weight: 600;
     line-height: 27.4px;
   }
   .submit-email {
-    width: 50%;
-    height: 100px;
+    width: 100%;
+    height: 50%;
   }
   .submit-email input {
     width: 100%;
-    height: 5%;
-    font-size: 12px;
+    height: 23%;
+    font-size: 15px;
+    padding-left: 40px;
   }
   .submit-email button {
-    height: 9%;
-    font-size: 10px;
+    height: 33%;
+    font-size: 20px;
     position: absolute;
-    bottom: 14px;
-    margin: 10px 7px;
-    padding-top: 1px;
-    padding-bottom: 15px;
+    bottom: 32px;
+
+    /* margin: 10px 7px; */
+    /* padding-top: 5px; */
   }
   .information {
-    height: 400px;
+    width: 95%;
+    height:65%;
     display: grid;
-    align-items: center;
+    align-items: start;
+    /* margin-top: 50px; */
+    padding-top: 50px;
   }
   .quick-link {
     height: 65%;
@@ -2011,56 +2120,472 @@ body {
     height: 65%;
   }
   .elexy-theme1 {
-    height: 50px;
+    width: 95%;
+    height: 8%;
   }
 }
 @media (max-width: 600px) {
   .backgroundimg {
-    background-size: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    gap: 20px;
-    overflow: hidden;
+    width: 100%;
+    height: 40%;
+    background-image: url(./assests/homepictures/hero-small-group.png);
+    background-size: 450px 350px;
   }
   .heading {
-    height: 15%;
-  }
-  .subNav {
-    width: 95%;
-  }
-  .navbar {
-    width: 30%;
+    height: 18%;
+}
+.subNav{
+  width: 95%;
+  margin: 0 auto;
+}
+  .navbar{
     display: flex;
-    gap: 5px;
   }
-  .navbar a {
-    font-size: 10px;
+    .navbar a{
+      display: none;
+    }
+    .homemenu-icon{
+      display: block;
+      color: rgb(106, 104, 104);
+      font-size: 27px;
+    }
+    .logo1{
+      display: none;
+    }
+    .menu-icon{
+      display: none;
+    }
+    .home{
+      display: none;
+    }
+    .homeMobile {
+      width: 100%;
+      height: 50%;
+      display: block;
+      background-color: #343333;
+      text-align: center;
   }
-  .logo1 {
-    width: 20%;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-  }
-  .logo1 img {
-    width: 40px;
-    height: 17px;
-  }
-  .search {
-    font-size: 10px;
-    gap: 5px;
-  }
-  .home {
-    width: 70%;
-    height: 50%;
-  }
-  .subhome {
-    width: 80%;
+  .subhome{
+    width: 92%;
     height: 100%;
+    margin: 0 auto;
   }
   .subhome1 {
-    width: 85%;
-  }
+    width: 100%;
+    margin-left: 0px;
+}
+.one {
+  width: 100%;
+  height: 15%;
+  font-size: 17px;
+  letter-spacing: 5px;
+  text-align: center;
+  margin-top: 30px;
+}
+.two {
+  width: 70%;
+  font-size: 27px;
+  margin-left: 40px;
+}
+.three {
+  width: 100%;
+  font-size: 17px;
+  font-weight: 700;
+  color: #dfdfe7;
+}
+.four {
+  width: 70%;
+  margin: 15px auto;
+}
+.preorder button {
+  padding: 8px 20px;
+  border-radius: 50px;
+  border: 2px solid #ffffff;
+  height: 48px;
+  width: 115px;
+}
+.preorder a {
+  font-size: 15px;
+  font-weight: 500;
+} 
+.viewmore button {
+  background-color: transparent;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 50px;
+  border: 2px solid #ffffff;
+  height: 48px;
+  width: 115px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.buynow {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.theme1 {
+  width: 100%;
+  height: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.qpad {
+  display: flex;
+  justify-content: center;
+}
+.qpad p {
+  font-size: 17px;
+}
+.qpad h2 {
+  width: 50%;
+  font-size: 20px;
+  font-weight: 700;
+}
+.qpad button {
+  width: 56px;
+}
+.qpad a {
+  font-size: 13px;
+  font-weight: 600;
+}
+.theme2 {
+  width: 100%;
+  height: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.pro {
+  display: flex;
+  justify-content: center;
+}
+.pro p {
+  font-size: 17px;
+}
+.pro h2 {
+  width: 50%;
+  font-size: 20px;
+  font-weight: 700;
+}
+.pro button {
+  width: 56px;
+}
+.pro a {
+  font-size: 13px;
+  font-weight: 600;
+}
+.theme3 {
+  width: 100%;
+  height: 34%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.morden {
+  display: flex;
+  justify-content: center;
+}
+.morden p {
+  font-size: 17px;
+}
+.morden h2 {
+  width: 50%;
+  font-size: 20px;
+  font-weight: 700;
+}
+.morden button {
+  width: 56px;
+}
+.morden a {
+  font-size: 13px;
+  font-weight: 600;
+}
+.category-section {
+  width: 100%;
+  height: 30%;
+}
+.category-headers{
+  width: 100%;
+  height: 100%;
+}
+.category-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3,1fr);
+  /* column-gap: 10px; */
+  margin-right: 10px;
+  row-gap: 1px;
+}
+.category-products {
+  width: 100%;
+  height: 100%;
+  display: flex
+;
+  flex-direction: column;
+  align-items: center;
+  padding: 1px 0;
+  gap: 10px;
+}
+.image-div {
+  width: 85%;
+}
+.cat-image {
+  width: 160px;
+  height: 160px;
+  border-radius: 250%;
+}
+.category-products h4 {
+  /* width: 100%; */
+  color: black;
+  font-family: "Open Sans", serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 21.2px;
+}
+.category-products p {
+  font-family: "Inter", serif;
+  color: #545353;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 17.4px;
+}
+.highlyrecommend {
+  width: 100%;
+  height: 25%;
+}
+.highly {
+  /* background-color: aqua; */
+  width: 95%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.recommend{
+  width: 100%;
+  height: 60%;
+}
+.recommend h2 {
+  font-family: "Open Sans", serif;
+  font-size: 29px;
+  font-weight: 600;
+  line-height: 50.4px;
+}
+.recommend p {
+  font-family: "Inter", serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18.4px;
+  color: #363636;
+  width: 85%;
+}
+.viewall {
+  /* background-color: #b4976c; */
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.viewall button{
+  width: 100px;
+  height: 40px;
+  font-size: 16px;
+}
+.bgsale1 {
+  /* background-color: aqua; */
+  width: 95%;
+  height: auto;
+  margin: 0 auto;
+  display: grid;
+  gap: 0;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 5px;
+  column-gap: 5px;
+}
+.img-1 {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  position: relative;
+} 
+.img-2 {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  border: none;
+  overflow: hidden;
+  transition: 0.4s linear;
+  transform: scale(1);
+}
+.phone12:hover .img-2 {
+  opacity: 1;
+  transition: 0.6s;
+}
+.prod-icons i{
+  font-size: 17px;
+  color: #525253;
+}
+.add11{
+  color: #050505;
+}
+.phone12 a{
+  font-size: 18px;
+}
+.phone12 p{
+  font-size: 13px;
+}
+.buynow1{
+  width: 100%;
+  height: 85%;
+}
+.buynow11 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.theme11 {
+  width: 100%;
+  height: 33%;
+}
+.theme12 {
+  width: 100%;
+  height: 33%;
+}
+.theme13 {
+  width: 100%;
+  height: 34%;
+}
+.qpad1{
+  width: 85%;
+  height: 85%;
+}
+.qpad1 h2{
+  font-size: 23px;
+}
+.pro1{
+  width: 90%;
+  height: 80%;
+}
+.pro1 h2{
+  width: 65%;
+  font-size: 23px;
+}
+.morden1{
+  width: 90%;
+  height: 80%;
+}
+.morden1 h2{
+  width: 75%;
+  font-size: 23px;
+}
+.bestselling{
+  width: 100%;
+  height: 40%;
+}
+.highly1{
+  width: 95%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.recommend1 {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: end;
+}
+.viewall1{
+  width: 100%;
+  height: 30%;
+}
+.recommend1 h2 {
+  font-size: 24px;
+}
+.recommend1 p{
+  width: 100%;
+}
+.viewall1 {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.viewall1 button {
+  font-size: 15px;
+  width: 105px;
+  height: 45px;
+  padding: 5px 16px;
+  border-radius: 40px;
+}
+.bgsale11 {
+  /* background-color: aqua; */
+  width: 95%;
+  height: auto;
+  margin: 0 auto;
+  display: grid;
+  gap: 0;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 5px;
+  column-gap: 5px;
+}
+.img-11 {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  position: relative;
+} 
+.img-21 {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  border: none;
+  overflow: hidden;
+  transition: 0.4s linear;
+  transform: scale(1);
+}
+.phone121:hover .img-21 {
+  opacity: 1;
+  transition: 0.6s;
+}
+.prod-icons1{
+  font-size: 17px;
+  color: #525253;
+  opacity: 1;
+}
+.prod-icons1 i{
+  font-size: 17px;
+  color: #525253;
+  opacity: 1;
+}
+.phone121:hover .prod-icons1 {
+  opacity: 0;
+  transition: 0.6s;
+}
+.add11{
+  color: #050505;
+}
+.phone121 a{
+  font-size: 18px;
+}
+.phone121 p{
+  font-size: 13px;
+}
+.star-rate{
+  width: 100%;
+  /* height: 10%; */
+  display: flex;
+}
 }
